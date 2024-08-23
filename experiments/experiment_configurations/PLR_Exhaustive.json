@@ -5,7 +5,7 @@
 	"LANDMARK_EXTRACTION_TYPE": "HOFFMANN_ORDERS_EXHAUSTIVE",
 	"FILTER_ACTIONS": "false",
 	"SIMPLIFY_GROUNDING": "false",
-	"MODDED_FD_PATH": "/home/nwilken/GoalRecognition/tools/landmark_generator/fast-downward.py",
+	"MODDED_FD_PATH": "",
 	"MAX_PLANNING_THREADS": "1",
 	"CURRENT_STATE_HANDLER": "GMPDDLStateHandler",
 	"PLANNING_SETUP_DIR_NAME": "planningSetups",
