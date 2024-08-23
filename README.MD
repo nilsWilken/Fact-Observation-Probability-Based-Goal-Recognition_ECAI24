@@ -91,6 +91,16 @@ When the landmark generator is configured correctly, the following command can b
 java -jar GoalRecognition.jar experiment 'path_to_experiment_setups' 'path_to_configuration_json'
 ```
 
+For this approach, we provide four different configuration files that each configure the system to use a different landmark extraction algorithm.
+For more details of the landmark extraction algorithm please look at the documentation of the Fast Downward planning system.
+The four possible alternatives are:
+1. `PLR_Exhaustive`
+2. `PLR_HM`
+3. `PLR_RHW`
+4. `PLR_ZG`
+
+**These names have to be used as the approach name when the provided execution scripts are used for experiment execution.**
+
 ### Masters and Sardina
 
 The execution of the MS approach requires an external planner.

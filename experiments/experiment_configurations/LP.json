@@ -1,6 +1,6 @@
 {
 	"EXPERIMENT_TYPE": "lpbased",
-	"LP_TEST_INSTANCE_PATH": "/ceph/nwilken/lp-recognizer/test_instance.py",
+	"LP_TEST_INSTANCE_PATH": "",
 	"CURRENT_STATE_HANDLER": "GMPDDLStateHandler",
 	"SERIALIZED_AVERAGE_PRAP_PERFORMANCE_FILE_NAME": "serializedAveragePRAPPerformance.json",
 	"PLANNING_SETUP_DIR_NAME": "planningSetups",
