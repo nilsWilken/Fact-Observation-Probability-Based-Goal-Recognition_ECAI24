@@ -1,0 +1,4 @@
+(unload k2 cf r1 l2)
+(unload k2 cd r1 l2)
+(load k1 ca r1 l1)
+(put k2 cb q2 ce l2)

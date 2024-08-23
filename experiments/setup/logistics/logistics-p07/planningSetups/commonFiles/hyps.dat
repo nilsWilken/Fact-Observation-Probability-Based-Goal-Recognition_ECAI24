@@ -1,0 +1,12 @@
+(AT obj11 pos21) (AT obj23 pos11) (AT obj66 pos22);hyp0
+(AT obj12 pos23) (AT obj21 pos13) (AT obj44 pos21);hyp1
+(AT obj13 pos21) (AT obj22 pos23) (AT obj55 pos13);hyp2
+(AT obj11 pos23) (AT obj21 pos12) (AT obj66 pos22);hyp3
+(AT obj12 pos22) (AT obj22 pos12) (AT obj44 pos21);hyp4
+(AT obj13 pos22) (AT obj23 pos12) (AT obj55 pos21);hyp5
+(AT obj11 pos23) (AT obj22 pos13) (AT obj66 pos22);hyp6
+(AT obj12 pos22) (AT obj21 pos13) (AT obj44 pos21);hyp7
+(AT obj13 pos22) (AT obj23 pos23) (AT obj55 pos11);hyp8
+(AT obj11 pos23) (AT obj21 pos12) (AT obj66 pos13);hyp9
+(AT obj66 pos22) (AT obj22 pos13) (AT obj44 pos21);hyp10
+(AT obj44 pos21) (AT obj23 pos13) (AT obj55 pos22);hyp11

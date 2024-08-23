@@ -1,0 +1,3 @@
+(UNSTACK A H)
+(PUT-DOWN A)
+(UNSTACK S T)

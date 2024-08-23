@@ -1,0 +1,3 @@
+(UNSTACK D A)
+(PUT-DOWN D)
+(UNSTACK A C)

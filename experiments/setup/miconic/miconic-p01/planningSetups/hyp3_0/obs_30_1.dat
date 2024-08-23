@@ -1,0 +1,5 @@
+(board f12 p1)
+(board f17 p3)
+(depart f2 p1)
+(depart f15 p7)
+(depart f1 p5)

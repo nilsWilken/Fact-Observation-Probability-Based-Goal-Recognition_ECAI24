@@ -1,0 +1,8 @@
+(on crate0 crate9) (on crate1 crate8) (on crate2 crate7) (on crate4 pallet0)
+(on crate0 crate9) (on crate1 crate8) (on crate2 crate6) (on crate4 pallet1)
+(on crate0 crate1) (on crate1 crate2) (on crate8 crate6) (on crate9 pallet1)
+(on crate0 crate1) (on crate1 crate2) (on crate5 crate6) (on crate9 pallet3)
+(on crate3 crate0) (on crate1 crate2) (on crate8 crate5) (on crate7 pallet0)
+(on crate3 crate0) (on crate1 crate2) (on crate8 crate5) (on crate7 pallet1)
+(on crate0 crate5) (on crate1 crate6) (on crate2 crate3) (on crate8 pallet2)
+(on crate0 crate5) (on crate1 crate6) (on crate2 crate8) (on crate8 pallet3)

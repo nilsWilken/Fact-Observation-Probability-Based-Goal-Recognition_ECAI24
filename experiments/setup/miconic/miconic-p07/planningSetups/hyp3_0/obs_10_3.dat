@@ -1,0 +1,8 @@
+(up f16 f18)
+(up f38 f39)
+(board f36 p9)
+(up f39 f42)
+(depart f18 p12)
+(up f18 f22)
+(down f38 f16)
+(down f16 f1)

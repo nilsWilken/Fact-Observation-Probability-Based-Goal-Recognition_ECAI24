@@ -1,0 +1,8 @@
+(AT driver1 s2) (AT truck1 s0) (AT package1 s1) (AT package2 s0);hyp0
+(AT driver1 s1) (AT truck1 s2) (AT package1 s2) (AT package2 s1);hyp1
+(AT driver1 s0) (AT truck1 s0) (AT package1 s0) (AT package2 s2);hyp2
+(AT driver1 s2) (AT truck1 s1) (AT package1 s1) (AT package2 s0);hyp3
+(AT driver1 s1) (AT truck1 s0) (AT package1 s2) (AT package2 s1);hyp4
+(AT driver1 s0) (AT truck1 s2) (AT package1 s0) (AT package2 s2);hyp5
+(AT driver1 s2) (AT truck1 s2) (AT package1 s1) (AT package2 s0);hyp6
+(AT driver1 s1) (AT truck1 s1) (AT package1 s0) (AT package2 s1);hyp7

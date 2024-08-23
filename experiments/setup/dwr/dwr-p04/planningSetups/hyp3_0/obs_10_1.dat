@@ -1,0 +1,8 @@
+(move r1 l1 l4)
+(move r1 l1 l2)
+(move r1 l3 l6)
+(unload k4 cb r1 l6)
+(move r1 l6 l5)
+(move r1 l4 l1)
+(unload k3 ca r1 l4)
+(move r1 l4 l5)

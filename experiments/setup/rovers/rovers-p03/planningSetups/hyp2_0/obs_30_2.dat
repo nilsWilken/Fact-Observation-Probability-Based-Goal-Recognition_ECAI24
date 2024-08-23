@@ -1,0 +1,4 @@
+(navigate rover1 waypoint1 waypoint2)
+(navigate rover0 waypoint0 waypoint1)
+(communicate_soil_data rover1 general waypoint2 waypoint2 waypoint3)
+(sample_rock rover0 rover0store waypoint1)

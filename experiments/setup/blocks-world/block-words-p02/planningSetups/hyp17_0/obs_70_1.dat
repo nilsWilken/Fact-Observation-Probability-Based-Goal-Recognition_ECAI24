@@ -1,0 +1,6 @@
+(PICK-UP C)
+(STACK C K)
+(PUT-DOWN S)
+(STACK A C)
+(PICK-UP H)
+(STACK H A)

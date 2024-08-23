@@ -1,0 +1,3 @@
+(load k1 ce r1 l1)
+(put k2 cb p2 cc l2)
+(load k1 ca r1 l1)

@@ -1,0 +1,3 @@
+(switch_on instrument0 satellite0)
+(turn_to satellite0 groundstation2 phenomenon6)
+(turn_to satellite0 phenomenon3 star0)

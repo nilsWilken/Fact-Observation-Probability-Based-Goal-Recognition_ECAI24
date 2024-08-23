@@ -1,0 +1,21 @@
+{
+	"CURRENT_TRANSLATION_SETUP": "DBN",
+	"DEFAULT_DOMAIN_FILE_PATH": "C:/Users/nwilken/Documents/Forschung/Experiments/LookAheadGoalRecognition/AmidstTest/TranslationSetup/pr-domain.pddl",
+	"DEFAULT_PROBLEM_DIR_PATH": "C:/Users/nwilken/Documents/Forschung/Experiments/LookAheadGoalRecognition/AmidstTest/TranslationSetup/workingFiles/pddl/",
+	"DEFAULT_NET_OUTPUT_PATH": "C:/Users/nwilken/Documents/Forschung/Experiments/LookAheadGoalRecognition/AmidstTest/TranslationSetup/",
+	"TRAINING_OBS_INPUT_PATH": "C:/Users/nwilken/Documents/Forschung/Experiments/LookAheadGoalRecognition/AmidstTest/TranslationSetup/workingFiles/obs/training",
+	"TEST_OBS_INPUT_PATH": "C:/Users/nwilken/Documents/Forschung/Experiments/LookAheadGoalRecognition/AmidstTest/TranslationSetup/workingFiles/obs/test",
+	"ARFF_OUTPUT_PATH_PREFIX": "C:/Users/nwilken/Documents/Forschung/Experiments/LookAheadGoalRecognition/AmidstTest/TranslationSetup/",
+	"HYPOTHESES": [
+		"hyp0",
+		"hyp1",
+		"hyp2",
+		"hyp3",
+		"hyp4",
+		"hyp5",
+		"hyp6",
+		"hyp7",
+		"hyp8",
+		"hyp9"
+	]
+}

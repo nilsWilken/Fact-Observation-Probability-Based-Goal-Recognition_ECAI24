@@ -1,0 +1,5 @@
+(unstack i e)
+(unstack f i)
+(unstack h k)
+(unstack j d)
+(pick-up d)

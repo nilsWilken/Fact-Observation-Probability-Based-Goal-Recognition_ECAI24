@@ -1,0 +1,19 @@
+{
+	"OUTPUT_PATH_PREFIX": "C:/Users/nwilken/Documents/Forschung/PhD_Project/IntentionRecognitionData/bayesExamples/weka/",
+	"OUTPUT_PAPER_EXPERIMENT_PATH_PREFIX": "C:/Users/nwilken/Documents/Forschung/PhD_Project/IntentionRecognitionData/planning-experiments/paper/bayes",
+	"WEKA_PATH_PREFIX": "C:/Users/nwilken/Documents/WekaFiles/",
+	"DATA_DIR_NAME": "data",
+	"TRAINING_DATA_DIR_NAME": "training_data",
+	"TEST_DATA_DIR_NAME": "test_data",
+	"RAW_OBSERVATIONS_DIR_NAME": "rawObservations",
+	"ARFF_OBSERVATIONS_DIR_NAME": "arffObservations",
+	"BAYES_TRANSLATION_PROBLEMS": "translationProblems",
+	"UNTRAINED_NET_NAME": "amidst_untrained_net.net",
+	"OBJECTS_SERIALIZATION_FILE_NAME": "pddlToNetObjectsSerialization.obj",
+	"SERIALIZED_BAYES_RESULTS_FILE_NAME": "serializedBayesResults.json",
+	"BAYES_RESULTS_DIR_NAME": "bayesResults",
+	"PAPER_EXPERIMENTS_PATH": "C:/Users/nwilken/Documents/Forschung/PhD_Project/IntentionRecognitionData/planning-experiments/paper/bayes",
+	"CSV_SEPARATOR": ";",
+	"FUNCTIONS_VALUE_DOMAIN_MIN_VALUE": 0,
+	"FUNCTIONS_VALUE_DOMAIN_MAX_VALUE": 8
+}

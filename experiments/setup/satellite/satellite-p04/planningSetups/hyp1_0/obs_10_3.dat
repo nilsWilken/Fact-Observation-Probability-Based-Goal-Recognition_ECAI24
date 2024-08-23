@@ -1,0 +1,2 @@
+(take_image satellite3 phenomenon5 instrument6 image1)
+(turn_to satellite3 planet9 phenomenon5)

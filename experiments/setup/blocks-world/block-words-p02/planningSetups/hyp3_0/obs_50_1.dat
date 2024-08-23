@@ -1,0 +1,4 @@
+(STACK S T)
+(PUT-DOWN A)
+(STACK S H)
+(STACK A S)

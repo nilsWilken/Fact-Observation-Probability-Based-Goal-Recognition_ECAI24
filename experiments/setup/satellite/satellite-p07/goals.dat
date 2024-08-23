@@ -1,0 +1,6 @@
+(pointing satellite1 Star3) (pointing satellite2 Phenomenon5) (have_image Star7 image0) (have_image Phenomenon5 image0) (have_image Planet8 image0) (have_image Planet9 image3) (have_image Planet10 image0)
+(pointing satellite1 Star7) (pointing satellite2 Phenomenon5) (have_image Star3 image0) (have_image Phenomenon5 image1) (have_image Planet11 image0) (have_image Planet9 image2) (have_image Planet10 image0)
+(pointing satellite1 Star7) (pointing satellite2 Phenomenon5) (have_image Star3 image1) (have_image Phenomenon5 image2) (have_image Planet10 image0) (have_image Planet9 image1) (have_image Planet11 image2)
+(pointing satellite1 Star1) (pointing satellite2 Phenomenon5) (have_image Star6 image1) (have_image Phenomenon5 image1) (have_image Planet8 image1) (have_image Planet9 image0) (have_image Planet11 image2)
+(pointing satellite1 Star6) (pointing satellite2 Phenomenon5) (have_image Star7 image1) (have_image Phenomenon5 image2) (have_image Planet8 image1) (have_image Planet9 image1) (have_image Planet11 image3)
+(pointing satellite1 Star1) (pointing satellite2 Phenomenon5) (have_image Star7 image2) (have_image Phenomenon5 image2) (have_image Planet8 image2) (have_image Planet9 image3) (have_image Planet11 image2)

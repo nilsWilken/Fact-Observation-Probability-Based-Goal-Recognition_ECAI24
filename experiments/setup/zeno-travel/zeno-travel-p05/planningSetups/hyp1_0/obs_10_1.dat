@@ -1,0 +1,4 @@
+(zoom plane2 city0 city1 fl4 fl3 fl2)
+(debark person2 plane3 city0)
+(debark person4 plane1 city5)
+(refuel plane1 city5 fl0 fl1)

@@ -1,0 +1,8 @@
+(load k1 cd r1 l1)
+(take k1 cc p1 cb l1)
+(load k3 cf r1 l4)
+(move r1 l3 l4)
+(move r1 l3 l2)
+(move r1 l3 l2)
+(move r1 l2 l3)
+(unload k2 ca r1 l3)

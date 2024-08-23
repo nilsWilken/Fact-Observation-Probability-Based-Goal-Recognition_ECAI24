@@ -1,0 +1,6 @@
+(AT box0 f1-6f) (AT box1 f5-3f);hyp0
+(AT box0 f2-5f) (AT box1 f0-6f);hyp1
+(AT box0 f0-1f) (AT box1 f6-6f);hyp2
+(AT box0 f2-6f) (AT box1 f5-6f);hyp3
+(AT box0 f1-1f) (AT box1 f4-6f);hyp4
+(AT box0 f0-3f) (AT box1 f6-2f);hyp5

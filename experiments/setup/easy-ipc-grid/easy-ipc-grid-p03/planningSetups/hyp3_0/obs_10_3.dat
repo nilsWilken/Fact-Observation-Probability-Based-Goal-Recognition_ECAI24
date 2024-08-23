@@ -1,0 +1,6 @@
+(move r1 l2 l1)
+(load k1 cd r1 l1)
+(move r1 l1 l2)
+(put k3 cd p3 pallet l4)
+(put k2 ce p2 cb l3)
+(move r1 l3 l4)

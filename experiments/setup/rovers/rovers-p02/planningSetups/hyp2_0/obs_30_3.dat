@@ -1,0 +1,4 @@
+(navigate rover1 waypoint1 waypoint3)
+(navigate rover1 waypoint3 waypoint1)
+(sample_rock rover0 rover0store waypoint0)
+(communicate_image_data rover1 general objective2 high_res waypoint1 waypoint3)

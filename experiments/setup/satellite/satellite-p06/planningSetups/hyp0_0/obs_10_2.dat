@@ -1,0 +1,3 @@
+(calibrate satellite0 instrument0 star1)
+(switch_on instrument2 satellite1)
+(turn_to satellite4 star16 planet9)

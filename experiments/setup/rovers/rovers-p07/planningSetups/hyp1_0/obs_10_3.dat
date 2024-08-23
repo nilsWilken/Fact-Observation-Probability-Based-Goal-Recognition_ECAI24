@@ -1,0 +1,5 @@
+(calibrate rover1 camera2 objective4 waypoint6)
+(navigate rover3 waypoint1 waypoint4)
+(drop rover0 rover0store)
+(sample_soil rover0 rover0store waypoint0)
+(navigate rover0 waypoint7 waypoint0)

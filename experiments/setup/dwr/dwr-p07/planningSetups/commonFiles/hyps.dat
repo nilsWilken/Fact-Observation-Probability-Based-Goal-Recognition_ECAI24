@@ -1,0 +1,8 @@
+(in cb p3) (in cc p2) (in cf p3) (in ca p2) (in cd p2) (in ce p2) (on cf pallet) (on ce pallet);hyp0
+(in cb p3) (in cc p2) (in cf p3) (in ca p1) (in cd p2) (in ce p3) (on cc pallet) (on ce pallet);hyp1
+(in cb p2) (in cc p2) (in cf p2) (in ca p3) (in cd p2) (in ce p3) (on cf pallet) (on ce pallet);hyp2
+(in cb p3) (in cc p3) (in cf p1) (in ca p2) (in cd p1) (in ce p2) (on cc pallet) (on ce pallet);hyp3
+(in cb p3) (in cc p2) (in cf p3) (in ca p3) (in cd p1) (in ce p2) (on ca pallet) (on ce pallet);hyp4
+(in cb p2) (in cc p3) (in cf p1) (in ca p2) (in cd p1) (in ce p2) (on ca pallet) (on cd pallet);hyp5
+(in cb p2) (in cc p2) (in cf p2) (in ca p3) (in cd p3) (in ce p2) (on cb pallet) (on ca pallet);hyp6
+(in cb p3) (in cc p2) (in cf p3) (in ca p2) (in cd p2) (in ce p3) (on cb pallet) (on ca pallet);hyp7

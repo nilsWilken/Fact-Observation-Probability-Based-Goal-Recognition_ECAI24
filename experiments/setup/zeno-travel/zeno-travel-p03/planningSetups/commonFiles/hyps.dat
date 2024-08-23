@@ -1,0 +1,6 @@
+(AT plane1 city0) (AT person1 city1) (AT person2 city2) (AT person3 city0) (AT person4 city1) (AT person5 city2);hyp0
+(AT plane1 city1) (AT person1 city1) (AT person2 city2) (AT person3 city1) (AT person4 city0) (AT person5 city2);hyp1
+(AT plane1 city2) (AT person1 city2) (AT person2 city1) (AT person3 city2) (AT person4 city2) (AT person5 city1);hyp2
+(AT plane1 city1) (AT person1 city0) (AT person2 city0) (AT person3 city1) (AT person4 city1) (AT person5 city0);hyp3
+(AT plane1 city0) (AT person1 city2) (AT person2 city1) (AT person3 city1) (AT person4 city1) (AT person5 city1);hyp4
+(AT plane1 city2) (AT person1 city0) (AT person2 city0) (AT person3 city1) (AT person4 city2) (AT person5 city1);hyp5

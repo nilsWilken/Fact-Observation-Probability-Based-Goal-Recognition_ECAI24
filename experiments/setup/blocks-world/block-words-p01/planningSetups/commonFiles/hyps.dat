@@ -1,0 +1,21 @@
+(CLEAR D) (ONTABLE W) (ON D R) (ON R A) (ON A W);hyp0
+(CLEAR W) (ONTABLE R) (ON W A) (ON A R);hyp1
+(CLEAR R) (ONTABLE W) (ON R A) (ON A W);hyp2
+(CLEAR W) (ONTABLE D) (ON W A) (ON A D);hyp3
+(CLEAR C) (ONTABLE W) (ON C R) (ON R O) (ON O W);hyp4
+(CLEAR R) (ONTABLE W) (ON R O) (ON O W);hyp5
+(CLEAR W) (ONTABLE R) (ON W E) (ON E A) (ON A R);hyp6
+(CLEAR E) (ONTABLE R) (ON E A) (ON A R);hyp7
+(CLEAR P) (ONTABLE R) (ON P E) (ON E A) (ON A R);hyp8
+(CLEAR R) (ONTABLE E) (ON R O) (ON O P) (ON P E);hyp9
+(CLEAR D) (ONTABLE E) (ON D O) (ON O P) (ON P E);hyp10
+(CLEAR D) (ONTABLE R) (ON D E) (ON E A) (ON A R);hyp11
+(CLEAR W) (ONTABLE E) (ON W O) (ON O R) (ON R E);hyp12
+(CLEAR P) (ONTABLE R) (ON P O) (ON O W) (ON W E) (ON E R);hyp13
+(CLEAR R) (ONTABLE P) (ON R E) (ON E A) (ON A P);hyp14
+(CLEAR C) (ONTABLE R) (ON C O) (ON O W) (ON W E) (ON E R);hyp15
+(CLEAR C) (ONTABLE E) (ON C O) (ON O R) (ON R E);hyp16
+(CLEAR P) (ONTABLE E) (ON P O) (ON O R) (ON R E);hyp17
+(CLEAR W) (ONTABLE E) (ON W A) (ON A D) (ON D E);hyp18
+(CLEAR P) (ONTABLE W) (ON P A) (ON A W);hyp19
+(CLEAR R) (ONTABLE E) (ON R A) (ON A P) (ON P E);hyp20

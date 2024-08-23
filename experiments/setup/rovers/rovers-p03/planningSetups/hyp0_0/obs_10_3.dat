@@ -1,0 +1,2 @@
+(communicate_soil_data rover1 general waypoint1 waypoint1 waypoint3)
+(take_image rover0 waypoint0 objective0 camera2 high_res)

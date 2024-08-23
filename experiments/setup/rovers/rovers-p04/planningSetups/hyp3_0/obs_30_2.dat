@@ -1,0 +1,5 @@
+(navigate rover0 waypoint1 waypoint0)
+(navigate rover1 waypoint0 waypoint6)
+(navigate rover2 waypoint3 waypoint6)
+(navigate rover1 waypoint6 waypoint4)
+(sample_rock rover1 rover1store waypoint4)

@@ -1,0 +1,8 @@
+(AT person1 city3) (AT person2 city1) (AT person3 city3) (AT person4 city0) (AT person5 city1);hyp0
+(AT person1 city2) (AT person2 city1) (AT person3 city2) (AT person4 city1) (AT person5 city3);hyp1
+(AT person1 city1) (AT person2 city2) (AT person3 city3) (AT person4 city2) (AT person5 city3);hyp2
+(AT person1 city2) (AT person2 city3) (AT person3 city1) (AT person4 city2) (AT person5 city2);hyp3
+(AT person1 city1) (AT person2 city3) (AT person3 city2) (AT person4 city3) (AT person5 city1);hyp4
+(AT person1 city3) (AT person2 city2) (AT person3 city1) (AT person4 city1) (AT person5 city1);hyp5
+(AT person1 city0) (AT person2 city1) (AT person3 city0) (AT person4 city0) (AT person5 city3);hyp6
+(AT person1 city2) (AT person2 city0) (AT person3 city2) (AT person4 city3) (AT person5 city0);hyp7

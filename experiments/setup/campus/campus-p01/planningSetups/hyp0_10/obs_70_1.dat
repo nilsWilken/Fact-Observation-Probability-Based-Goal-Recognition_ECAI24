@@ -1,0 +1,4 @@
+(MOVE bookmark_cafe library)
+(MOVE library bank)
+(MOVE bank davis_theater)
+(MOVE bookmark_cafe psychology_bldg)

@@ -1,0 +1,6 @@
+(debark c0 l2)
+(board c3 l1)
+(debark c3 l0)
+(sail l0 l1)
+(sail l0 l1)
+(board c2 l1)

@@ -1,0 +1,7 @@
+(unstack k c)
+(unstack d a)
+(unstack m i)
+(unstack c a)
+(put-down c)
+(pick-up g)
+(pick-up q)

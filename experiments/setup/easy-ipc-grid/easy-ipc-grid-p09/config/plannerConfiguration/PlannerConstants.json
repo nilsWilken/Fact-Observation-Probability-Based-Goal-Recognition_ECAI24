@@ -1,0 +1,16 @@
+{
+	"DOMAIN_FILE_NAME": "domain.pddl",
+	"GROUNDED_DOMAIN_FILE_NAME": "domain_grounded.pddl",
+	"TEMPLATE_FILE_NAME": "template.pddl",
+	"ALL_HYPS_FILE_NAME": "hyps.dat",
+	"REAL_HYP_FILE_NAME": "real_hyp.dat",
+	"OBS_FILE_NAME": "obs.dat",
+	"RESULTS_DIR_NAME": "results",
+	"ARFF_OUTPUT_DIR_NAME": "arffObservations",
+	"TRUE_HYP_FILE_NAME": "real_hyp.dat",
+	"PLANNING_RESULTS_DIR_NAME": "planningResults",
+	"SERIALIZED_PLANNING_RESULTS_FILE_NAME": "serializedPlanningResults.json",
+	"MAX_PLANNING_THREADS": 20,
+	"maxPlanningThreads": 0,
+	"RUN_PLANNER": true
+}

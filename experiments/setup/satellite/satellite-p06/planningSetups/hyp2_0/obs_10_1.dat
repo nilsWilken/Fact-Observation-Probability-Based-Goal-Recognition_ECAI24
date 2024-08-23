@@ -1,0 +1,4 @@
+(turn_to satellite4 star7 star2)
+(switch_on instrument5 satellite2)
+(turn_to satellite2 star11 phenomenon8)
+(turn_to satellite2 phenomenon14 star0)

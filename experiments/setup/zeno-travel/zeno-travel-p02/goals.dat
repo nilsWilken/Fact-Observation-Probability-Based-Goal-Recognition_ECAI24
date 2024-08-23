@@ -1,0 +1,6 @@
+(AT person1 city0) (AT person2 city0) (AT person3 city1) (AT person4 city0) (AT person6 city3)
+(AT person1 city0) (AT person2 city1) (AT person3 city2) (AT person4 city3) (AT person5 city1)
+(AT person1 city1) (AT person2 city2) (AT person3 city0) (AT person4 city3) (AT person5 city4)
+(AT person6 city1) (AT person2 city2) (AT person3 city0) (AT person4 city2) (AT person5 city3)
+(AT person1 city2) (AT person2 city3) (AT person3 city3) (AT person4 city1) (AT person5 city2) (AT person6 city3)
+(AT person1 city4) (AT person2 city2) (AT person3 city1) (AT person4 city2) (AT person5 city4) (AT person6 city0)

@@ -1,0 +1,5 @@
+(drop rover3 rover3store)
+(navigate rover0 waypoint1 waypoint5)
+(navigate rover3 waypoint3 waypoint8)
+(navigate rover2 waypoint2 waypoint8)
+(communicate_rock_data rover2 general waypoint2 waypoint8 waypoint2)

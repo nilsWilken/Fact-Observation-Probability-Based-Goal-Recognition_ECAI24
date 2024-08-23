@@ -1,0 +1,8 @@
+(depart f10 p2)
+(depart f15 p3)
+(up f0 f15)
+(depart f15 p7)
+(down f15 f2)
+(down f2 f1)
+(down f3 f2)
+(up f2 f13)

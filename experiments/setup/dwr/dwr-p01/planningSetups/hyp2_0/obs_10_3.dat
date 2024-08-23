@@ -1,0 +1,4 @@
+(move r1 l1 l2)
+(move r1 l1 l2)
+(load k1 cb r1 l1)
+(move r1 l1 l2)

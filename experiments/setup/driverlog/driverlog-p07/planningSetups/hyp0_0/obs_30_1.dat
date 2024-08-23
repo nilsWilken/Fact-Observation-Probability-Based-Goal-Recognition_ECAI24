@@ -1,0 +1,8 @@
+(load-truck package5 truck2 s1)
+(drive-truck truck2 s1 s5 driver2)
+(load-truck package1 truck2 s5)
+(drive-truck truck2 s0 s7 driver2)
+(load-truck package3 truck2 s9)
+(unload-truck package4 truck2 s8)
+(disembark-truck driver2 truck2 s8)
+(board-truck driver2 truck3 s8)

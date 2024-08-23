@@ -1,0 +1,5 @@
+(move place_1_5 place_1_6)
+(move place_1_4 place_1_3)
+(unlock place_1_2 place_1_1 key_11 shape_11)
+(move place_3_0 place_4_0)
+(move place_4_6 place_4_7)

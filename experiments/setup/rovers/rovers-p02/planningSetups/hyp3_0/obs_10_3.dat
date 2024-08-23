@@ -1,0 +1,2 @@
+(navigate rover1 waypoint1 waypoint2)
+(sample_soil rover1 rover1store waypoint2)

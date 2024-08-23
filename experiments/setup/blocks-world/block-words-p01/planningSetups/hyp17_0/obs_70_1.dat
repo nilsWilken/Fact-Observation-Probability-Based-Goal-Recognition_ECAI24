@@ -1,0 +1,5 @@
+(UNSTACK R P)
+(PICK-UP O)
+(STACK O R)
+(PICK-UP P)
+(STACK P O)

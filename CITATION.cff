@@ -1,0 +1,20 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Fact Probability Vector Based Goal Recognition - Supplementary Material
+message: >-
+  When you find this code useful for your work, please cite
+  it using the following metadata. Please consider also
+  citing the corresponding paper "Fact Probability Vector
+  Based Goal Recognition" presented at ECAI 2024.
+type: software
+authors:
+  - given-names: Nils
+    family-names: Wilken
+    email: nils.wilken@uni-mannheim.de
+    orcid: 'https://orcid.org/0000-0003-1336-245X'
+    affiliation: University of Mannheim
+repository-code: >-
+  https://github.com/nilsWilken/Fact-Observation-Probability-Based-Goal-Recognition_ECAI24
+license: MIT

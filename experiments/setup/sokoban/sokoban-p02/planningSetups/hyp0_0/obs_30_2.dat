@@ -1,0 +1,5 @@
+(move f1-0f f1-1f right)
+(move f0-2f f0-3f right)
+(move f1-3f f1-2f left)
+(move f2-0f f3-0f down)
+(move f3-1f f4-1f down)

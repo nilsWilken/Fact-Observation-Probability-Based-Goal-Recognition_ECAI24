@@ -1,0 +1,23 @@
+{
+	"BAYES_NET_PATH": "_logistics_DBN_net_amidst_trained.dbn",
+	"SERIALIZATION_PATH_FILE": "pddlToNetRelevantObjectsSerialization_Logistics.dat",
+	"OBS_OUTPUT_DIR_PATH": "",
+	"NUMBER_OF_PLANS": 5,
+	"NUMBER_OF_NEXT_STEPS": 2,
+	"BAYES_CONV_SETUP": "DBN",
+	"HYPOTHESIS_NODE_NAMES": [
+		"goal"
+	],
+	"HYPOTHESES": [
+		"hyp0",
+		"hyp1",
+		"hyp2",
+		"hyp3",
+		"hyp4",
+		"hyp5",
+		"hyp6",
+		"hyp7",
+		"hyp8",
+		"hyp9"
+	]
+}

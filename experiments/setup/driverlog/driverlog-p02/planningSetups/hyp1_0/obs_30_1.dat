@@ -1,0 +1,5 @@
+(board-truck driver1 truck2 s1)
+(drive-truck truck2 s1 s0 driver1)
+(load-truck package1 truck2 s0)
+(drive-truck truck1 s1 s0 driver3)
+(walk driver2 p2-1 s1)

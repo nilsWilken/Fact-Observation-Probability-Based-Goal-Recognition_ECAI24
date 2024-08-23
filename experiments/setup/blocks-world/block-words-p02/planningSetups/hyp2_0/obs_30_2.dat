@@ -1,0 +1,3 @@
+(PUT-DOWN A)
+(UNSTACK S T)
+(STACK A S)

@@ -1,0 +1,3 @@
+(board-truck driver2 truck2 s1)
+(drive-truck truck2 s1 s5 driver2)
+(board-truck driver2 truck3 s8)

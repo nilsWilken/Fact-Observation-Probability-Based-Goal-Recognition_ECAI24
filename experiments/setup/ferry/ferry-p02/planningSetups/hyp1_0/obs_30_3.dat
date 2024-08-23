@@ -1,0 +1,6 @@
+(board c3 l1)
+(sail l0 l3)
+(sail l3 l0)
+(sail l0 l3)
+(sail l3 l2)
+(sail l2 l3)

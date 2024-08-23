@@ -1,0 +1,4 @@
+(put-down c)
+(put-down i)
+(pick-up b)
+(pick-up c)

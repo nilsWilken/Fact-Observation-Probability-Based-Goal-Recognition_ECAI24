@@ -1,0 +1,4 @@
+(load-truck obj55 tru4 pos13)
+(drive-truck tru1 pos11 apt1 cit1)
+(unload-truck obj33 tru1 apt1)
+(unload-truck obj23 tru2 pos23)

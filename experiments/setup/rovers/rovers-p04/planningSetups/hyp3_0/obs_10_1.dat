@@ -1,0 +1,2 @@
+(navigate rover1 waypoint3 waypoint0)
+(communicate_image_data rover1 general objective1 high_res waypoint0 waypoint1)

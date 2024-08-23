@@ -1,0 +1,17 @@
+{
+	"WAITING_TIME_MILLISECONDS": 100,
+	"MAX_TIME_MILLISECONDS": 30000,
+	"ACTIVE_PLANNER": "METRIC_FF",
+	"ACTIVE_TOPK_PLANNER": "FI_TOPK",
+	"JAVA_PATH": "C:/Users/nwilken/Downloads/openjdk-15+36_windows-x64_bin/jdk-15/bin/java.exe",
+	"ENHSP_PLANNER_LOCATION": "./libs/ENHSP.jar",
+	"ENHSP_PLANNER_STRATEGY": "sat-hmrphj",
+	"ENHSP_ANYTIME_MODE": true,
+	"METRICFF_PLANNER_LOCATION": "/home/nwilken/praputilities/compiled_planners/ff",
+	"METRICFF_PLANNER_STRATEGY": "0",
+	"FI_TOPK_LOCATION": "../forbiditerative/plan.py",
+	"FI_TOPK_RESULTS_LOCATION": "./found_plans/done",
+	"FI_TOPK_PLANNER_SPEC": "topk",
+	"NUMBER_OF_PLANS": 2,
+	"DELETE_PLAN_AND_LOG_FILES": "true"
+}

@@ -1,0 +1,7 @@
+(move r1 l2 l3)
+(put k3 cd p3 ce l4)
+(move r1 l3 l2)
+(move r1 l2 l3)
+(move r1 l3 l4)
+(move r1 l3 l4)
+(put k3 cd p3 ca l4)

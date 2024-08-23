@@ -1,0 +1,4 @@
+(unload-airplane obj22 apn3 apt7)
+(drive-truck tru4 pos13 apt1 cit1)
+(unload-airplane obj44 apn3 apt7)
+(drive-truck tru2 apt7 pos21 cit2)

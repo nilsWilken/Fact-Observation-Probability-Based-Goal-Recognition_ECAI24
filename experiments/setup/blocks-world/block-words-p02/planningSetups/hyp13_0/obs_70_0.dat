@@ -1,0 +1,5 @@
+(STACK C K)
+(PICK-UP U)
+(STACK U C)
+(UNSTACK S A)
+(STACK S U)

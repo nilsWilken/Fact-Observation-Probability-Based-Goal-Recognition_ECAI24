@@ -1,0 +1,2 @@
+(sample_rock rover0 rover0store waypoint0)
+(calibrate rover0 camera2 objective1 waypoint0)

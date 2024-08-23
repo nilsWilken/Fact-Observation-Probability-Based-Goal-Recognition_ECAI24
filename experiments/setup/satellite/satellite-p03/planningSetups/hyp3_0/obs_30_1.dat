@@ -1,0 +1,3 @@
+(turn_to satellite0 groundstation2 phenomenon6)
+(turn_to satellite0 star5 phenomenon4)
+(turn_to satellite0 phenomenon6 star5)

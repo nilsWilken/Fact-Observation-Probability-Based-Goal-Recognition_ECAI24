@@ -1,0 +1,5 @@
+(move f7-2f f6-2f up)
+(move f2-8f f2-7f left)
+(move f1-7f f0-7f up)
+(move f0-7f f0-6f left)
+(move f2-3f f3-3f down)

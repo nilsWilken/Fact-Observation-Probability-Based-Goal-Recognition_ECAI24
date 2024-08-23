@@ -1,0 +1,2 @@
+(calibrate satellite0 instrument1 groundstation2)
+(take_image satellite0 phenomenon6 instrument1 image2)

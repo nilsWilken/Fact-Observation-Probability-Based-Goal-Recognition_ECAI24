@@ -1,0 +1,5 @@
+(at-robot place_0_4)
+(at-robot place_1_4)
+(at-robot place_2_4)
+(at-robot place_3_4)
+(at-robot place_4_4)

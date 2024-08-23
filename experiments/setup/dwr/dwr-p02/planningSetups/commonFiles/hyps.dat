@@ -1,0 +1,8 @@
+(in ca q2) (in cb q2) (in cc q1);hyp0
+(in ca p2) (in cb q1) (in cc p2);hyp1
+(in ca p2) (in cb q2) (in cc q1);hyp2
+(in ca q1) (in cb p2) (in cc q2);hyp3
+(in ca q1) (in cb q2) (in cc q2);hyp4
+(in ca q2) (in cb q1) (in cc q2);hyp5
+(in ca q2) (in cb p2) (in cc q2);hyp6
+(in ca q2) (in cb q2) (in cc p2);hyp7

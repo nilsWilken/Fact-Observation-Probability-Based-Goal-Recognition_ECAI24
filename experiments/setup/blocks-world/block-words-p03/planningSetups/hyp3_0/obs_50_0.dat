@@ -1,0 +1,4 @@
+(UNSTACK M O)
+(PUT-DOWN M)
+(STACK O R)
+(STACK M O)

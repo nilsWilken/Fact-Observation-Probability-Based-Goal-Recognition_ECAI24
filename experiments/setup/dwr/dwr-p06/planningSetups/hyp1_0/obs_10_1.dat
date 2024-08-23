@@ -1,0 +1,7 @@
+(take k1 cf p1 ce l1)
+(move r1 l1 l4)
+(move r1 l1 l4)
+(put k4 cd p4 ce l6)
+(load k4 cc r1 l6)
+(move r1 l6 l3)
+(unload k1 cc r1 l1)

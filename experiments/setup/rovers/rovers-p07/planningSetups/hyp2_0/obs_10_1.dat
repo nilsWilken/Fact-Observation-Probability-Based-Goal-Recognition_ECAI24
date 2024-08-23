@@ -1,0 +1,5 @@
+(take_image rover1 waypoint6 objective1 camera2 high_res)
+(navigate rover3 waypoint1 waypoint4)
+(take_image rover0 waypoint0 objective2 camera1 high_res)
+(drop rover3 rover3store)
+(navigate rover0 waypoint5 waypoint4)

@@ -1,0 +1,7 @@
+(take k1 cb p1 ca l1)
+(load k1 cb r1 l1)
+(move r1 l1 l2)
+(unload k2 cb r1 l2)
+(load k1 ca r1 l1)
+(move r1 l1 l2)
+(unload k2 ca r1 l2)

@@ -1,0 +1,8 @@
+(on crate0 crate1) (on crate1 pallet0);hyp0
+(on crate0 crate1) (on crate1 pallet2);hyp1
+(on crate0 crate1) (on crate1 pallet1);hyp2
+(on crate1 crate0) (on crate0 pallet3);hyp3
+(on crate0 crate1) (on crate1 pallet3);hyp4
+(on crate1 crate0) (on crate0 pallet0);hyp5
+(on crate1 crate0) (on crate0 pallet1);hyp6
+(on crate1 crate0) (on crate0 pallet2);hyp7

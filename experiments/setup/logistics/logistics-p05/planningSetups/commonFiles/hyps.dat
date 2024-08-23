@@ -1,0 +1,10 @@
+(AT obj11 pos21) (AT obj23 pos11);hyp0
+(AT obj12 pos23) (AT obj21 pos23);hyp1
+(AT obj11 pos23) (AT obj21 pos12);hyp2
+(AT obj12 pos22) (AT obj22 pos12);hyp3
+(AT obj11 pos23) (AT obj22 pos13);hyp4
+(AT obj12 pos22) (AT obj21 pos13);hyp5
+(AT obj13 pos21) (AT obj23 pos13);hyp6
+(AT obj11 pos22) (AT obj21 pos12);hyp7
+(AT obj33 pos22) (AT obj44 pos13);hyp8
+(AT obj44 pos21) (AT obj23 pos13);hyp9

@@ -1,0 +1,2 @@
+(board-truck driver2 truck2 s0)
+(disembark-truck driver2 truck2 s1)

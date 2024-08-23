@@ -1,0 +1,3 @@
+(load k1 cc r1 l1)
+(take k1 cf q1 ce l1)
+(unload k1 ca r1 l1)

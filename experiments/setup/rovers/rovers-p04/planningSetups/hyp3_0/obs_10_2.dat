@@ -1,0 +1,2 @@
+(take_image rover1 waypoint0 objective1 camera0 high_res)
+(navigate rover2 waypoint6 waypoint3)

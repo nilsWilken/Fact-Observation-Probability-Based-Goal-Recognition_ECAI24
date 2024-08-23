@@ -1,0 +1,4 @@
+(switch_on instrument1 satellite0)
+(take_image satellite0 planet3 instrument1 infrared1)
+(turn_to satellite0 planet4 planet3)
+(turn_to satellite0 phenomenon6 phenomenon5)

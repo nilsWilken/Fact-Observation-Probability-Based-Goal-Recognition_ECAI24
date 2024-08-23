@@ -1,0 +1,4 @@
+(sample_soil rover0 rover0store waypoint4)
+(navigate rover3 waypoint2 waypoint4)
+(sample_soil rover0 rover0store waypoint2)
+(navigate rover0 waypoint2 waypoint4)

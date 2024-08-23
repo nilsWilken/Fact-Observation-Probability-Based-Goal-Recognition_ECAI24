@@ -1,0 +1,6 @@
+(up f0 f1)
+(up f1 f2)
+(board f21 p11)
+(board f27 p6)
+(up f15 f19)
+(board f23 p0)

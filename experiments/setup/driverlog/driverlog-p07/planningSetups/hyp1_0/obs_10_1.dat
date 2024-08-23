@@ -1,0 +1,3 @@
+(walk driver3 s2 p1-2)
+(board-truck driver2 truck1 s2)
+(drive-truck truck3 s5 s0 driver2)

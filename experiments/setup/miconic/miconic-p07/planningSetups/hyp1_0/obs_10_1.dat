@@ -1,0 +1,6 @@
+(board f2 p5)
+(up f24 f26)
+(up f24 f27)
+(depart f16 p3)
+(down f33 f2)
+(board f2 p13)

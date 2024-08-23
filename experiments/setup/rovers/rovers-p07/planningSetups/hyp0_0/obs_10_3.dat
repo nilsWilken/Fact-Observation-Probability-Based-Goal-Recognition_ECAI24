@@ -1,0 +1,5 @@
+(navigate rover2 waypoint1 waypoint7)
+(communicate_rock_data rover3 general waypoint2 waypoint4 waypoint9)
+(navigate rover3 waypoint4 waypoint9)
+(navigate rover0 waypoint2 waypoint4)
+(navigate rover0 waypoint10 waypoint4)

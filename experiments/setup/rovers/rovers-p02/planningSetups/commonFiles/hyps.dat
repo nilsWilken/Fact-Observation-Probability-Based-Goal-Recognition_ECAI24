@@ -1,0 +1,6 @@
+(communicated_soil_data waypoint1) (communicated_rock_data waypoint0) (communicated_image_data objective0 high_res) (communicated_image_data objective2 high_res);hyp0
+(communicated_soil_data waypoint2) (communicated_rock_data waypoint1) (communicated_image_data objective1 high_res) (communicated_image_data objective2 high_res);hyp1
+(communicated_soil_data waypoint3) (communicated_rock_data waypoint0) (communicated_image_data objective0 high_res) (communicated_image_data objective2 high_res);hyp2
+(communicated_soil_data waypoint2) (communicated_rock_data waypoint0) (communicated_image_data objective1 high_res) (communicated_image_data objective2 high_res);hyp3
+(communicated_soil_data waypoint3) (communicated_rock_data waypoint1) (communicated_image_data objective0 low_res) (communicated_image_data objective1 high_res);hyp4
+(communicated_soil_data waypoint1) (communicated_soil_data waypoint3) (communicated_image_data objective2 low_res) (communicated_image_data objective0 high_res);hyp5

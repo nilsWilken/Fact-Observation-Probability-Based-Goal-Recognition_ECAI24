@@ -1,0 +1,5 @@
+(board f13 p3)
+(up f17 f18)
+(up f18 f20)
+(up f26 f32)
+(board f43 p13)

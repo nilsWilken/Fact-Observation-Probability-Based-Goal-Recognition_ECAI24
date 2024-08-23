@@ -1,0 +1,6 @@
+(in ca q1) (in cb p2) (in cc p2) (in cd p1) (in ce p2) (in cf p1)
+(in ca p2) (in cb q2) (in cc p1) (in cd q2) (in ce p2) (in cf q1)
+(in ca q2) (in cb q2) (in cc q1) (in cd p2) (in ce q2) (in cf q2)
+(in ca q1) (in cb q2) (in cc p2) (in cd q2) (in ce p2) (in cf p1)
+(in ca q2) (in cb p2) (in cc p2) (in cd q2) (in ce p1) (in cf p2)
+(in ca p2) (in cb q2) (in cc p2) (in cd q2) (in ce q2) (in cf q2)

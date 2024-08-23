@@ -1,0 +1,36 @@
+(define (problem ferryProblem)
+(:domain ferry)
+(:objects l0 l1 l2 
+          c0 c1 c2 c3 c4 c5 - obj
+)
+(:init
+(location l0)
+(location l1)
+(location l2)
+(car c0)
+(car c1)
+(car c2)
+(car c3)
+(car c4)
+(car c5)
+(not-eq l0 l1)
+(not-eq l1 l0)
+(not-eq l0 l2)
+(not-eq l2 l0)
+(not-eq l1 l2)
+(not-eq l2 l1)
+(empty-ferry)
+(AT c0 l1)
+(AT c1 l0)
+(AT c2 l1)
+(AT c3 l1)
+(AT c4 l1)
+(AT c5 l0)
+(at-ferry l0)
+)
+(:goal
+(and
+	<HYPOTHESIS>
+)
+)
+)

@@ -1,0 +1,4 @@
+(switch_on instrument0 satellite0)
+(take_image satellite0 star3 instrument0 spectrograph2)
+(turn_to satellite0 phenomenon5 star4)
+(take_image satellite0 phenomenon5 instrument0 spectrograph2)

@@ -1,0 +1,3 @@
+(put k1 cf p1 pallet l1)
+(take k1 ce q1 cd l1)
+(put k2 ce p2 cb l2)

@@ -1,0 +1,2 @@
+(switch_on instrument1 satellite0)
+(turn_to satellite0 groundstation2 planet4)

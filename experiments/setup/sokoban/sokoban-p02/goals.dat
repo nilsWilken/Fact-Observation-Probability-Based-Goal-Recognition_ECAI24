@@ -1,0 +1,8 @@
+(AT box0 f1-2f) (AT box1 f2-3f)
+(AT box0 f1-1f) (AT box1 f4-2f)
+(AT box0 f2-4f) (AT box1 f1-4f)
+(AT box0 f3-4f) (AT box1 f1-1f)
+(AT box0 f3-4f) (AT box1 f4-4f)
+(AT box0 f2-4f) (AT box1 f3-1f)
+(AT box0 f2-4f) (AT box1 f4-3f)
+(AT box0 f1-2f) (AT box1 f4-4f)

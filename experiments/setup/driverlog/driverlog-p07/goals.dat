@@ -1,0 +1,8 @@
+(AT driver2 s0) (AT truck1 s2) (AT truck3 s1) (AT package1 s3) (AT package2 s7) (AT package3 s3) (AT package4 s8) (AT package5 s9)
+(AT driver2 s0) (AT truck1 s2) (AT truck3 s3) (AT package1 s0) (AT package2 s0) (AT package3 s4) (AT package4 s4) (AT package5 s3)
+(AT driver3 s1) (AT truck1 s6) (AT truck3 s3) (AT package1 s0) (AT package2 s0) (AT package3 s4) (AT package4 s4) (AT package5 s3)
+(AT driver3 s1) (AT truck1 s6) (AT truck3 s5) (AT package1 s2) (AT package2 s4) (AT package3 s2) (AT package4 s1) (AT package5 s2)
+(AT driver3 s3) (AT truck1 s4) (AT truck3 s5) (AT package1 s2) (AT package2 s0) (AT package3 s4) (AT package4 s3) (AT package5 s2)
+(AT driver3 s1) (AT truck1 s6) (AT truck3 s3) (AT package1 s1) (AT package2 s2) (AT package3 s4) (AT package4 s5) (AT package5 s3)
+(AT driver2 s1) (AT truck1 s6) (AT truck3 s3) (AT package1 s0) (AT package2 s0) (AT package3 s4) (AT package4 s4) (AT package5 s3)
+(AT driver2 s1) (AT truck1 s6) (AT truck3 s9) (AT package1 s0) (AT package2 s8) (AT package3 s4) (AT package4 s7) (AT package5 s3)

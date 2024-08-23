@@ -1,0 +1,3 @@
+(take_image satellite1 star4 instrument3 infrared0)
+(turn_to satellite1 phenomenon5 star4)
+(turn_to satellite0 phenomenon6 star4)

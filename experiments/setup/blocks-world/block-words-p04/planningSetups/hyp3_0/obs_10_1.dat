@@ -1,0 +1,4 @@
+(put-down g)
+(stack i a)
+(stack d f)
+(pick-up c)

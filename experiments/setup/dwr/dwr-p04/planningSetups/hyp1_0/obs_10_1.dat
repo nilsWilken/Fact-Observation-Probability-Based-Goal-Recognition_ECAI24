@@ -1,0 +1,7 @@
+(move r1 l3 l6)
+(unload k3 cf r1 l4)
+(take k1 ce p1 cb l1)
+(move r1 l1 l2)
+(move r1 l3 l2)
+(put k3 cf p3 pallet l4)
+(move r1 l3 l2)

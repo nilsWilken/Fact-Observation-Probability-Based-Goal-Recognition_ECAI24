@@ -1,0 +1,3 @@
+(debark person1 plane3 city3)
+(fly plane2 city1 city4 fl1 fl0)
+(fly plane1 city4 city0 fl1 fl0)

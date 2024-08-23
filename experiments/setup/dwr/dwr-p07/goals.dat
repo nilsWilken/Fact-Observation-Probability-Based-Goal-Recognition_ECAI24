@@ -1,0 +1,8 @@
+(in cb p3) (in cc p2) (in cf p3) (in ca p2) (in cd p2) (in ce p2) (on cf pallet) (on ce pallet)
+(in cb p3) (in cc p2) (in cf p3) (in ca p1) (in cd p2) (in ce p3) (on cc pallet) (on ce pallet)
+(in cb p2) (in cc p2) (in cf p2) (in ca p3) (in cd p2) (in ce p3) (on cf pallet) (on ce pallet)
+(in cb p3) (in cc p3) (in cf p1) (in ca p2) (in cd p1) (in ce p2) (on cc pallet) (on ce pallet)
+(in cb p3) (in cc p2) (in cf p3) (in ca p3) (in cd p1) (in ce p2) (on ca pallet) (on ce pallet)
+(in cb p2) (in cc p3) (in cf p1) (in ca p2) (in cd p1) (in ce p2) (on ca pallet) (on cd pallet)
+(in cb p2) (in cc p2) (in cf p2) (in ca p3) (in cd p3) (in ce p2) (on cb pallet) (on ca pallet)
+(in cb p3) (in cc p2) (in cf p3) (in ca p2) (in cd p2) (in ce p3) (on cb pallet) (on ca pallet)

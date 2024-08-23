@@ -1,0 +1,4 @@
+(communicate_rock_data rover0 general waypoint0 waypoint0 waypoint3)
+(take_image rover0 waypoint0 objective0 camera2 high_res)
+(calibrate rover1 camera0 objective1 waypoint1)
+(communicate_image_data rover1 general objective2 high_res waypoint1 waypoint3)

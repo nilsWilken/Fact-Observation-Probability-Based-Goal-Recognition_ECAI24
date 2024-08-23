@@ -1,0 +1,6 @@
+(load k1 cc r1 l1)
+(load k1 cb r1 l1)
+(move r1 l4 l1)
+(move r1 l4 l5)
+(put k4 ca p4 ce l6)
+(load k2 cf r1 l3)

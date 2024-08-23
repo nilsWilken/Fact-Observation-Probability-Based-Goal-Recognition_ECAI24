@@ -1,0 +1,10 @@
+(information-gathered perseus) (information-gathered cassiopea) (information-gathered andromeda) (information-gathered sagittarius) (information-gathered scorpio) (information-gathered virgo) (information-gathered aries) (information-gathered leo) (information-gathered libra) (information-gathered taurus);hyp0
+(data-stolen-from perseus) (data-stolen-from taurus) (data-stolen-from aries);hyp1
+(vandalized perseus) (vandalized taurus) (vandalized leo);hyp2
+(data-stolen-from leo) (data-stolen-from taurus) (vandalized taurus);hyp3
+(vandalized virgo) (data-stolen-from aries) (data-stolen-from sagittarius);hyp4
+(data-stolen-from cassiopea) (data-stolen-from libra) (vandalized taurus);hyp5
+(vandalized libra) (vandalized virgo) (vandalized scorpio);hyp6
+(data-stolen-from andromeda) (vandalized virgo) (data-stolen-from aries);hyp7
+(vandalized sagittarius) (vandalized scorpio) (data-stolen-from virgo);hyp8
+(data-stolen-from perseus) (data-stolen-from cassiopea) (vandalized libra);hyp9

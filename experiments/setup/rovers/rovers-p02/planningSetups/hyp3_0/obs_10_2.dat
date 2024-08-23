@@ -1,0 +1,2 @@
+(sample_rock rover0 rover0store waypoint0)
+(take_image rover1 waypoint2 objective2 camera0 high_res)

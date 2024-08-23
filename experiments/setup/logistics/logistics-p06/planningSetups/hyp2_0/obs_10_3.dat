@@ -1,0 +1,4 @@
+(fly-airplane apn2 apt1 apt2)
+(fly-airplane apn3 apt2 apt1)
+(drive-truck tru4 pos13 apt1 cit1)
+(drive-truck tru2 pos21 pos22 cit2)

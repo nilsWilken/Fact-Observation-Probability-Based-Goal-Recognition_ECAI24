@@ -1,0 +1,2 @@
+(unload-truck package3 truck1 s1)
+(unload-truck package2 truck1 s1)

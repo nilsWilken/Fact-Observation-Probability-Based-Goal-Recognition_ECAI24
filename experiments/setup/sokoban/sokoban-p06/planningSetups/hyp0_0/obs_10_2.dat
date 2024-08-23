@@ -1,0 +1,4 @@
+(move f6-2f f6-3f right)
+(move f4-5f f5-5f down)
+(move f5-5f f5-6f right)
+(move f2-5f f3-5f down)

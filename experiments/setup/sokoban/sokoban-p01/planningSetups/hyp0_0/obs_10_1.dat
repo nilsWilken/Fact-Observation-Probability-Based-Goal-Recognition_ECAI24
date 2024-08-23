@@ -1,0 +1,3 @@
+(move f6-0f f6-1f right)
+(move f1-6f f1-5f left)
+(push f0-2f f1-2f f2-2f down box0)

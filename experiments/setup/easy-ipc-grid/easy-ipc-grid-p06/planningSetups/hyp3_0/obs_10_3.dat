@@ -1,0 +1,7 @@
+(move place_1_3 place_1_4)
+(move place_1_4 place_1_5)
+(move place_1_5 place_1_6)
+(move place_1_3 place_1_2)
+(move place_1_0 place_2_0)
+(move place_8_1 place_8_2)
+(move place_3_3 place_2_3)

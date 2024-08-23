@@ -1,0 +1,2 @@
+(switch_on instrument1 satellite0)
+(calibrate satellite0 instrument1 groundstation2)

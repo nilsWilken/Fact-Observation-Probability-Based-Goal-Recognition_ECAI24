@@ -1,0 +1,3 @@
+(turn_to satellite0 groundstation2 phenomenon6)
+(calibrate satellite0 instrument0 groundstation2)
+(take_image satellite0 phenomenon4 instrument0 thermograph0)

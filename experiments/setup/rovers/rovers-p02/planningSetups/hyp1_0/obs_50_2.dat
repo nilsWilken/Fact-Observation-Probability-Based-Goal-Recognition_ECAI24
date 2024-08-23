@@ -1,0 +1,7 @@
+(navigate rover1 waypoint0 waypoint1)
+(navigate rover0 waypoint0 waypoint1)
+(sample_rock rover0 rover0store waypoint1)
+(calibrate rover0 camera2 objective1 waypoint1)
+(calibrate rover1 camera0 objective1 waypoint2)
+(communicate_image_data rover0 general objective1 high_res waypoint1 waypoint3)
+(communicate_image_data rover1 general objective2 high_res waypoint2 waypoint3)

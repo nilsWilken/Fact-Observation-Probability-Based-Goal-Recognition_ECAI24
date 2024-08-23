@@ -1,0 +1,6 @@
+(served p0) (served p1) (served p2) (served p3);hyp0
+(served p1) (served p2) (served p4) (served p5);hyp1
+(served p2) (served p4) (served p3) (served p5);hyp2
+(served p3) (served p1) (served p5) (served p4);hyp3
+(served p4) (served p5) (served p3) (served p0);hyp4
+(served p5) (served p1) (served p2) (served p3);hyp5

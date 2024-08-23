@@ -1,0 +1,4 @@
+(sample_soil rover2 rover2store waypoint7)
+(navigate rover3 waypoint8 waypoint4)
+(navigate rover3 waypoint4 waypoint9)
+(take_image rover0 waypoint0 objective2 camera1 high_res)

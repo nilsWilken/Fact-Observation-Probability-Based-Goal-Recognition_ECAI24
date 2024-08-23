@@ -1,0 +1,7 @@
+(board c5 l0)
+(board c8 l2)
+(debark c8 l0)
+(board c6 l0)
+(debark c6 l1)
+(debark c9 l0)
+(board c7 l3)

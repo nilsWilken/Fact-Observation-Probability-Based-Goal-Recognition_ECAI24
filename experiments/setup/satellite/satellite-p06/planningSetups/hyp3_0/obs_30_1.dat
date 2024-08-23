@@ -1,0 +1,7 @@
+(turn_to satellite0 planet10 star0)
+(turn_to satellite1 groundstation3 star4)
+(calibrate satellite1 instrument2 groundstation3)
+(take_image satellite1 planet10 instrument2 image2)
+(turn_to satellite1 star11 planet10)
+(switch_on instrument7 satellite3)
+(take_image satellite3 phenomenon13 instrument7 image4)

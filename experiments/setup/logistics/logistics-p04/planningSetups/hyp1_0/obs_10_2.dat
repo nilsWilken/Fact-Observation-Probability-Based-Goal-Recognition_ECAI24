@@ -1,0 +1,6 @@
+(drive-truck tru1 pos11 apt8 cit1)
+(unload-airplane obj88 apn8 apt8)
+(load-airplane obj44 apn8 apt8)
+(load-truck obj22 tru4 apt8)
+(load-truck obj12 tru2 apt7)
+(load-truck obj12 tru2 pos22)

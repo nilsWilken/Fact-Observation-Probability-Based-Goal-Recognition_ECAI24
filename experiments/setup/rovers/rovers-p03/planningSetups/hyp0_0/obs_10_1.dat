@@ -1,0 +1,2 @@
+(sample_rock rover0 rover0store waypoint0)
+(communicate_image_data rover0 general objective2 low_res waypoint0 waypoint3)

@@ -1,0 +1,8 @@
+(AT c0 l6) (AT c1 l0) (AT c2 l3) (AT c3 l1) (AT c4 l6) (AT c5 l8) (AT c6 l7);hyp0
+(AT c0 l6) (AT c1 l0) (AT c2 l1) (AT c3 l3) (AT c4 l5) (AT c5 l8) (AT c6 l7);hyp1
+(AT c0 l3) (AT c1 l7) (AT c2 l1) (AT c3 l6) (AT c4 l8) (AT c5 l5) (AT c6 l0);hyp2
+(AT c0 l3) (AT c1 l7) (AT c2 l1) (AT c3 l4) (AT c4 l8) (AT c5 l7) (AT c8 l0);hyp3
+(AT c0 l8) (AT c1 l2) (AT c2 l6) (AT c3 l4) (AT c4 l2) (AT c8 l3) (AT c9 l1);hyp4
+(AT c0 l8) (AT c1 l2) (AT c2 l5) (AT c3 l7) (AT c4 l0) (AT c8 l4) (AT c9 l1);hyp5
+(AT c5 l0) (AT c6 l3) (AT c2 l7) (AT c3 l4) (AT c4 l2) (AT c8 l5) (AT c9 l1);hyp6
+(AT c5 l0) (AT c6 l3) (AT c2 l6) (AT c3 l7) (AT c4 l1) (AT c8 l4) (AT c9 l8);hyp7

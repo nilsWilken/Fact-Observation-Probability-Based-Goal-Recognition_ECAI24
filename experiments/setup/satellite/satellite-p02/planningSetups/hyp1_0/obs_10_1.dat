@@ -1,0 +1,2 @@
+(switch_on instrument1 satellite0)
+(take_image satellite0 star7 instrument1 infrared1)

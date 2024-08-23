@@ -1,0 +1,4 @@
+(unstack h k)
+(unstack k a)
+(stack f i)
+(stack b h)
