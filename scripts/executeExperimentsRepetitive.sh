@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if ! [ -d "../experiments/results" ]; then
+    mkdir ../experiments/results
+fi
+
 #Remove existing results
 rm -r ../experiments/results/$2/
 mkdir ../experiments/results/$2
