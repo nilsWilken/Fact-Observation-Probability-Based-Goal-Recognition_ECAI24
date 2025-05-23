@@ -7,7 +7,7 @@ This repository contains the code which was used for the evaluation of the paper
   title={Fact Probability Vector Based Goal Recognition},
   author={Wilken, Nils and Cohausz, Lea and Bartelt, Christian and Stuckenschmidt, Heiner},
   booktitle={ECAI 2024},
-  pages={"in press"},
+  pages={4254-4261},
   publisher={IOS Press},
   year={2024}
 }
