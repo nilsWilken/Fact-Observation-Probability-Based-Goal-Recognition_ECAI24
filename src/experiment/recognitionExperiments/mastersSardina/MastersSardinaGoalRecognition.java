@@ -17,6 +17,7 @@ import experiment.evaluation.wrapper.PRAPResultsWrapper;
 import experiment.management.EvaluationExperimentManager;
 import utils.DirectoryManager;
 import utils.JSONUtils;
+import utils.externalProcessExecution.ProcessStartFailedException;
 import utils.database.ExperimentResultDatabase;
 
 public class MastersSardinaGoalRecognition {	
@@ -64,25 +65,38 @@ public class MastersSardinaGoalRecognition {
 		ExperimentResultDatabase db = this.dirManager.getPlanningResultsDBHandler();
 		
 		//Try to execute all experiments via the ExecutorService framework
+		ExecutorService executorService = Executors.newFixedThreadPool(GoalRecognitionConfiguration.MAX_PLANNING_THREADS);
 		try {
-			ExecutorService executorService = Executors.newFixedThreadPool(GoalRecognitionConfiguration.MAX_PLANNING_THREADS);
 			List<Future<MastersSardinaExperiment>> results = executorService.invokeAll(experiments);
 
-			db.createSummaryTable();
-		
-			ExperimentResult cResult;
-			MastersSardinaExperiment exp;
+			//Collect all experiments first, so that a failed experiment aborts before anything is written to the database
+			List<MastersSardinaExperiment> finishedExperiments = new ArrayList<MastersSardinaExperiment>();
 			for(int i=0; i < results.size(); i++) {
-				exp = results.get(i).get();
+				finishedExperiments.add(results.get(i).get());
+			}
+
+			db.createSummaryTable();
+
+			ExperimentResult cResult;
+			for(MastersSardinaExperiment exp : finishedExperiments) {
 				cResult = exp.generateExperimentResult();
 				this.PRAPResults.put(exp.getExperimentName(), cResult);
 				db.writeExperimentResultToDatabase(cResult);
 			}
 
-			executorService.shutdown();
 			db.commit();
-		}catch(InterruptedException | ExecutionException e) {
+		}catch(ExecutionException e) {
+			//A planner process could not be started at all: the environment is broken, so abort the whole run
+			if(e.getCause() instanceof ProcessStartFailedException) {
+				System.err.println("ABORTING RUN: " + e.getCause().getMessage());
+				executorService.shutdownNow();
+				System.exit(3);
+			}
 			e.printStackTrace();
+		}catch(InterruptedException e) {
+			e.printStackTrace();
+		}finally {
+			executorService.shutdown();
 		}
 
 		JSONUtils.writeObjectToJSON(new PRAPResultsWrapper(this.PRAPResults), this.dirManager.getSerializedPlanningResultsFile());

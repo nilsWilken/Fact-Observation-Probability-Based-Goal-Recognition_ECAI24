@@ -13,7 +13,7 @@ for (( i=1; i<=$1; i++ ))
 do
     for filename in ../experiments/setup/*/*; 
     do
-        java -jar ../target/GoalRecognition-0.0.1-SNAPSHOT-jar-with-dependencies.jar experiment $filename ../experiments/experiment_configurations/$2.json
+        java -jar ../target/GoalRecognition-0.0.1-SNAPSHOT-jar-with-dependencies.jar experiment $filename ../experiments/experiment_configurations/$2.json || { status=$?; echo "Goal recognition aborted for $filename (exit $status)"; exit 1; }
     done
 
     #Copy experiment results of one repetition to result directory

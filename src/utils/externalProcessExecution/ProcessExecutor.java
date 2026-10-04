@@ -16,18 +16,17 @@ public class ProcessExecutor extends Thread {
 	
 	private List<String> command;
 	private File logFile;
-	private BufferedReader procIn;
-	private BufferedWriter procLogOut;
-	private String line;
-	private Process process;
-	private boolean processDestroyed;
-	private long runTime;
+	private volatile Process process;
+	private volatile boolean processDestroyed;
+	private volatile boolean processStartFailed;
+	private volatile long runTime;
 	private List<String> log;
 	
 	public ProcessExecutor(List<String> command, File logFile) {
 		this.command = command;
 		this.logFile = logFile;
 		this.processDestroyed = false;
+		this.processStartFailed = false;
 		this.log = new ArrayList<String>();
 	}
 	
@@ -56,29 +55,33 @@ public class ProcessExecutor extends Thread {
 			builder.directory(new File(System.getProperty("user.dir")));
 			
 			this.process = builder.start();
+		}catch(IOException e) {
+			this.processStartFailed = true;
+			System.err.println("Could not start external process " + extendedCommand + ": " + e.getMessage());
+			e.printStackTrace();
+			this.runTime = System.currentTimeMillis() - startTime;
+			return;
+		}
 
-			this.procIn = new BufferedReader(new InputStreamReader(this.process.getInputStream()));
-			this.procLogOut = new BufferedWriter(new FileWriter(this.logFile));
+		StreamGobbler errorReader = new StreamGobbler(this.process.getErrorStream());
+		errorReader.start();
 
-			StreamGobbler errorReader = new StreamGobbler(process.getErrorStream());
-			errorReader.start();
-
-			while(!this.processDestroyed && (this.line=this.procIn.readLine()) != null) {
-				this.procLogOut.write(line);
-				this.procLogOut.newLine();
+		//Only this thread writes and closes the log. After a forced destroy the pipe reaches EOF and the loop ends.
+		try(BufferedReader procIn = new BufferedReader(new InputStreamReader(this.process.getInputStream()));
+			BufferedWriter procLogOut = new BufferedWriter(new FileWriter(this.logFile))) {
+			String line;
+			while((line = procIn.readLine()) != null) {
+				procLogOut.write(line);
+				procLogOut.newLine();
 				this.log.add(line);
 			}
-
-			errorReader.interrupt();
-
-			if(!this.processDestroyed) {
-				this.procLogOut.flush();
-				this.procLogOut.close();
-				this.procIn.close();
-			}
 		}catch(IOException e) {
-			e.printStackTrace();
+			if(!this.processDestroyed) {
+				e.printStackTrace();
+			}
 		}
+
+		errorReader.interrupt();
 		this.runTime = System.currentTimeMillis() - startTime;
 	}
 	
@@ -90,20 +93,19 @@ public class ProcessExecutor extends Thread {
 		this.processDestroyed = true;
 		
 		logger.info("Try to destroy process....");
-		this.process.destroyForcibly();
-		
-		try {
-			if (this.line != null) {
-				this.procLogOut.write(line);
-				this.procLogOut.flush();
-				this.log.add(line);
-			}
-
-			this.procLogOut.close();
-		} catch (IOException e) {
-			e.printStackTrace();
+		Process p = this.process;
+		if(p != null) {
+			p.destroyForcibly();
 		}
 		logger.info("Successfully destroyed process!");
+	}
+	
+	public boolean isProcessDestroyed() {
+		return this.processDestroyed;
+	}
+	
+	public boolean hasProcessStartFailed() {
+		return this.processStartFailed;
 	}
 	
 	public long getRuntime() {

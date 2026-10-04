@@ -16,6 +16,7 @@ import experiment.evaluation.utils.ExperimentResult;
 import experiment.evaluation.utils.ResultObsStep;
 import experiment.recognitionExperiments.abstractExperiment.AbstractEvaluationPRAPGoalRecognitionExperiment;
 import experiment.recognitionExperiments.abstractExperiment.AbstractPRAPGoalRecognitionExperiment;
+import symbolic.planning.planners.classicPlanners.IClassicalPlanner;
 import symbolic.planning.stateHandler.obsConversion.GMPDDLStateHandler;
 
 public class MastersSardinaExperiment extends AbstractEvaluationPRAPGoalRecognitionExperiment implements Callable<MastersSardinaExperiment> {
@@ -97,7 +98,7 @@ public class MastersSardinaExperiment extends AbstractEvaluationPRAPGoalRecognit
 				
 				this.runPlannerForObsProblem(obsCounter, hypCounter);
 				cComputationTimes.put(hypCounter, this.planner.getRuntime());
-				if(this.planner.getPlanLength() > -1)  {
+				if(this.planner.getPlanLength() != IClassicalPlanner.FAILED_PLAN_LENGTH)  {
 					cPlanCosts.put(hypCounter, (this.planner.getPlanLength() + obsCounter));
 				} else {
 					cPlanCosts.put(hypCounter, Integer.MAX_VALUE);
@@ -182,7 +183,12 @@ public class MastersSardinaExperiment extends AbstractEvaluationPRAPGoalRecognit
 		for(int hyp : this.initialPlanCosts.keySet()) {
 			expResult.addPlanLength(AbstractPRAPGoalRecognitionExperiment.generateGMMSInitialPlanLengthKey(hyp), this.initialPlanCosts.get(hyp));
 			for(int obs : this.planCosts.keySet()) {
-				expResult.addPlanLength(AbstractPRAPGoalRecognitionExperiment.generateGMMSPlanLengthKey(hyp, obs), this.planCosts.get(obs).get(hyp));
+				//Failed runs are kept as Integer.MAX_VALUE for the probability calculation but stored as FAILED_PLAN_LENGTH
+				int obsPlanCost = this.planCosts.get(obs).get(hyp);
+				if(obsPlanCost == Integer.MAX_VALUE) {
+					obsPlanCost = IClassicalPlanner.FAILED_PLAN_LENGTH;
+				}
+				expResult.addPlanLength(AbstractPRAPGoalRecognitionExperiment.generateGMMSPlanLengthKey(hyp, obs), obsPlanCost);
 			}
 		}
 		return expResult;

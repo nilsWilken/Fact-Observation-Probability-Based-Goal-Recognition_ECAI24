@@ -12,11 +12,16 @@ import java.util.List;
 import config.GoalRecognitionConfiguration;
 import utils.externalProcessExecution.ExternalProcessExecutionHandler;
 import utils.externalProcessExecution.ProcessExecutionHandler;
+import utils.externalProcessExecution.ProcessStartFailedException;
 
 public class MetricFFPlanner implements IClassicalPlanner {
 	
-	private List<String> plan;
-	private double planCost = -1;
+	//Metric-FF output lines that indicate a successful run
+	private static final String PLAN_FOUND_MARKER = "ff: found legal plan as follows";
+	private static final String EMPTY_PLAN_MARKER = "ff: goal can be simplified to TRUE";
+	
+	private List<String> plan = new ArrayList<String>();
+	private double planCost = IClassicalPlanner.FAILED_PLAN_LENGTH;
 	private long runTime;
 
 	@Override
@@ -31,31 +36,56 @@ public class MetricFFPlanner implements IClassicalPlanner {
 
 	@Override
 	public int getPlanLength() {
-		if(this.planCost == -1) {
-			return -1;
+		if(this.planCost == IClassicalPlanner.FAILED_PLAN_LENGTH) {
+			return IClassicalPlanner.FAILED_PLAN_LENGTH;
 		}
 		return this.plan.size();
 	}
 
 	@Override
 	public boolean parsePlanFromLogFile(File logFile) {
+		this.markAsFailed();
 		try {
-			this.plan = new ArrayList<String>();
-			
 			List<String> lines = Files.readAllLines(Paths.get(logFile.getAbsolutePath()), StandardCharsets.UTF_8);
 			
+			boolean planFound = false;
+			boolean emptyPlanSolves = false;
 			for(String line : lines) {
-				this.parseLine(line);
+				if(line.contains(PLAN_FOUND_MARKER)) {
+					planFound = true;
+				}
+				else if(line.contains(EMPTY_PLAN_MARKER)) {
+					emptyPlanSolves = true;
+				}
+				//Plan steps (and the optional plan cost) are only printed after the success marker
+				else if(planFound) {
+					this.parseLine(line);
+				}
 			}
-			if(lines.size() > 10 && this.planCost == -1) {
-				this.planCost = this.plan.size();
+			
+			if(planFound && !this.plan.isEmpty()) {
+				if(this.planCost == IClassicalPlanner.FAILED_PLAN_LENGTH) {
+					this.planCost = this.plan.size();
+				}
 			}
-						
+			else if(emptyPlanSolves && !planFound) {
+				this.planCost = 0;
+			}
+			//Timeout, unsolvable problem, or unexpected output
+			else {
+				this.markAsFailed();
+			}
 			return true;
 		}catch(IOException e) {
 			e.printStackTrace();
+			this.markAsFailed();
 		}
 		return false;
+	}
+	
+	private void markAsFailed() {
+		this.plan = new ArrayList<String>();
+		this.planCost = IClassicalPlanner.FAILED_PLAN_LENGTH;
 	}
 
 	@Override
@@ -106,19 +136,45 @@ public class MetricFFPlanner implements IClassicalPlanner {
 
 	@Override
 	public void runPlanner(File dFile, File pFile, File planFile, File logFile) {
-		this.planCost = -1;
+		this.markAsFailed();
+		this.runTime = 0;
+		
+		//Remove results of earlier runs so that they can never be parsed as results of this run
 		try {
-			Thread execution = ExternalProcessExecutionHandler.scheduleCommandForExecution(this.generateExecutionCommand(dFile, pFile, planFile), logFile, true);
+			Files.deleteIfExists(logFile.toPath());
+			Files.deleteIfExists(planFile.toPath());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		ProcessExecutionHandler execution;
+		try {
+			execution = ExternalProcessExecutionHandler.scheduleCommandForExecution(this.generateExecutionCommand(dFile, pFile, planFile), logFile, true);
 			while(execution.getState() == Thread.State.NEW) {
 				Thread.sleep(100);
 			}
 			execution.join();
-			this.runTime = ((ProcessExecutionHandler)execution).getRuntime();
+			this.runTime = execution.getRuntime();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
+			return;
 		}
+		
+		if(execution.hasStartFailed()) {
+			throw new ProcessStartFailedException("Metric-FF could not be started for problem " + pFile.getAbsolutePath()
+				+ ". Aborting the run (was the JDK upgraded while this JVM was running?).");
+		}
+		if(execution.isTimedOut()) {
+			System.out.println("Metric-FF timed out after " + this.runTime + " ms on " + pFile.getAbsolutePath());
+			return;
+		}
+		
 		this.parsePlanFromLogFile(logFile);
-		this.writePlanToFile(planFile);
+		
+		//Only successful runs get a plan file: missing plan file = failure, empty plan file = empty plan
+		if(this.getPlanLength() != IClassicalPlanner.FAILED_PLAN_LENGTH) {
+			this.writePlanToFile(planFile);
+		}
 	}
 	
 	public long getRuntime() {

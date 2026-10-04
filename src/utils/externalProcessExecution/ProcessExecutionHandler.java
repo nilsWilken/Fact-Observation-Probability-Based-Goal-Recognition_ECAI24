@@ -10,8 +10,10 @@ public class ProcessExecutionHandler extends Thread {
 	private List<String> command;
 	private File logFile;
 	private boolean hardDestroy;
-	private long runTime;
-	private List<String> log;
+	private volatile long runTime;
+	private volatile List<String> log;
+	private volatile boolean timedOut;
+	private volatile boolean startFailed;
 	
 	public ProcessExecutionHandler(List<String> command, File logFile, boolean hardDestroy) {
 		this.command = command;
@@ -26,18 +28,18 @@ public class ProcessExecutionHandler extends Thread {
 		pExecutor.start();
 		
 		if(this.hardDestroy) {
-			long startTime = System.currentTimeMillis();
-			while((System.currentTimeMillis() - startTime) < GoalRecognitionConfiguration.MAX_TIME_MILLISECONDS && pExecutor.isAlive()) {
-				// try {
-				// 	Thread.sleep(100);
-				// 	System.out.println(System.currentTimeMillis() - startTime);
-				// } catch (InterruptedException e) {
-				// 	e.printStackTrace();
-				// }
+			//Wait until the process finishes or the time limit is reached
+			try {
+				long remaining = GoalRecognitionConfiguration.MAX_TIME_MILLISECONDS - (System.currentTimeMillis() - startTimeGlobal);
+				if(remaining > 0) {
+					pExecutor.join(remaining);
+				}
+			} catch (InterruptedException e) {
+				e.printStackTrace();
 			}
-
 			
 			if(pExecutor.isAlive()) {
+				this.timedOut = true;
 				pExecutor.destroyProcess();
 				pExecutor.interrupt();
 			
@@ -59,6 +61,7 @@ public class ProcessExecutionHandler extends Thread {
 				e.printStackTrace();
 			}
 		}
+		this.startFailed = pExecutor.hasProcessStartFailed();
 		if(this.runTime == 0) {
 			this.runTime = System.currentTimeMillis() - startTimeGlobal;
 		}
@@ -70,5 +73,13 @@ public class ProcessExecutionHandler extends Thread {
 
 	public List<String> getLog() {
 		return this.log;
+	}
+	
+	public boolean isTimedOut() {
+		return this.timedOut;
+	}
+	
+	public boolean hasStartFailed() {
+		return this.startFailed;
 	}
 }

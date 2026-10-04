@@ -71,6 +71,10 @@ public class GoalRecognitionConfiguration {
 	}
 
 	public static double calculateLikelihoodRatio(double planCostO, double planCostNotO) {
+		//Failed planner runs (-1 or Integer.MAX_VALUE) make the hypothesis impossible
+		if (planCostO < 0 || planCostNotO < 0 || planCostO == Integer.MAX_VALUE || planCostNotO == Integer.MAX_VALUE) {
+			return 0.0;
+		}
 		if (planCostO == 0) {
 			return 0.0;
 		}

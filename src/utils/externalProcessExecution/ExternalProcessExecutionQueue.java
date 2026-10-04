@@ -12,7 +12,9 @@ public class ExternalProcessExecutionQueue extends Thread {
 	
 	private Queue<ProcessExecutionHandler> executionQueue;
 	private List<ProcessExecutionHandler> currentlyActiveThreads;
-	private boolean requestedToStop;
+	private volatile boolean requestedToStop;
+	
+	private static final long POLL_INTERVAL_MILLISECONDS = 5;
 		
 	protected ExternalProcessExecutionQueue(int maxThreads) {
 		this.maxThreads = maxThreads;
@@ -28,6 +30,12 @@ public class ExternalProcessExecutionQueue extends Thread {
 		while(!requestedToStop) {
 			this.updateActiveThreadList();
 			this.updateWaitingQueue();
+			
+			try {
+				Thread.sleep(POLL_INTERVAL_MILLISECONDS);
+			} catch (InterruptedException e) {
+				return;
+			}
 		}
 	}
 	
